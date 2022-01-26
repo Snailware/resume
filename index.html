@@ -17,7 +17,9 @@
     <body>
         <header>
             <!-- nav bar -->
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <nav
+                class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top lead"
+            >
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
                         Adam Lancaster
@@ -68,12 +70,82 @@
         </header>
 
         <main>
-            <h1>cover page/index</h1>
+            <!-- Carousel -->
+            <div class="container-fluid pt-4">
+                <div
+                    id="cover-carousel"
+                    class="carousel slide mt-5"
+                    data-bs-ride="carousel"
+                >
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#cover-carousel"
+                            data-bs-slide-to="0"
+                            class="active"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#cover-carousel"
+                            data-bs-slide-to="1"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#cover-carousel"
+                            data-bs-slide-to="2"
+                        ></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                                src="https://www.thesprucepets.com/thmb/QDw4vt7XXQejL2IRztKeRLow6hA=/2776x1561/smart/filters:no_upscale()/cat-talk-eyes-553942-hero-df606397b6ff47b19f3ab98589c3e2ce.jpg"
+                                alt="Los Angeles"
+                                class="d-block w-100"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="https://www.thesprucepets.com/thmb/h1mUtmdaxvaEGwR7vGM-QJh9WAg=/2799x1574/smart/filters:no_upscale()/guide-to-cat-eyes-552114-hero-75d820458de24543a35543a584b9eec6.jpg"
+                                alt="Chicago"
+                                class="d-block w-100"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="https://www.fearfreehappyhomes.com/wp-content/uploads/2020/08/cateyefeatured.jpg"
+                                alt="New York"
+                                class="d-block w-100"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#cover-carousel"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#cover-carousel"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
         </main>
 
         <!-- footer -->
         <div class="container">
-            <footer class="py-3 my-4">
+            <footer class="py-3 my-4 lead">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link px-2 text-muted"
@@ -103,7 +175,9 @@
                         >
                     </li>
                 </ul>
-                <p class="text-center text-muted">Adam Lancaster, 2022</p>
+                <p class="text-center text-muted">
+                    <small> Adam Lancaster, 2022 </small>
+                </p>
             </footer>
         </div>
 
